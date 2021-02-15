@@ -1,0 +1,249 @@
+* {
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+
+blockquote {
+  font-size: 1.6em;
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 1.2em;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 1em;
+  text-shadow: 
+    1px 0 white,
+    0 1px white,
+    -1px 0 white,
+    0 -1px white;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  opacity: 0.8;
+}
+
+.focusContent {
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.8;
+  width: 20%;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1em;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0.8;
+  width: 80%;
+  height: 10%;
+}
+
+.weather {
+  min-width: fit-content;
+  width: fit-content;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.2em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.city {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.temperature
+
+.tempIcon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#date {
+  color: black;
+  font-size: 6em;
+  text-shadow: 
+    1px 0 white,
+    0 1px white,
+    -1px 0 white,
+    0 -1px white;
+}
+
+#time {
+  color: black;
+  font-size: 9em;
+  text-shadow: 
+    1px 0 white,
+    0 1px white,
+    -1px 0 white,
+    0 -1px white;
+}
+
+.imageBtn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3em;
+    height: 3em;
+    border: 0;
+    background: url("https://www.pngarts.com/files/7/Update-Button-Transparent-Images.png");
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+  }
+  .imageBtn:hover {
+    background-color: white;
+    opacity: 1;
+  }
+  .imageBtn:active,
+  .imageBtn:focus {
+    outline: 0;
+  }
+  .imageBtn:active{
+    transform: rotate(80deg);
+  }
+
+  .quoteBtn {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border: 0;
+    background: url("https://www.pngarts.com/files/7/Update-Button-Transparent-Images.png");
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+  }
+  .quoteBtn:hover {
+    background-color: white;
+    opacity: 1;
+  }
+  .quoteBtn:active,
+  .quoteBtn:focus {
+    outline: 0;
+  }
+  .quoteBtn:active{
+    transform: rotate(80deg);
+  }
+
+
+
+@media(max-width: 768px) {
+  blockquote {
+    font-size: 1.3em;
+  }
+  figcaption {
+    font-size: 1em;
+  }
+  .temperature{
+    font-size: 1.7em;
+  }
+  .weather{
+    min-width: 25%;
+    width: fit-content;
+    height: fit-content;
+  }
+  .quote {
+    width: 95%;
+    height: 13%;
+  }
+  .focusContent {
+    width: 30%;
+  }
+  #time {
+    font-size: 6em;
+  }
+  #date {
+    font-size: 5em;
+  }
+}
+
+@media(max-width: 541px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  body {
+    font-size: 15px;
+  }
+  blockquote {
+    font-size: 1.2em;
+  }
+  figcaption {
+    font-size: 0.9em;
+  }
+  .imageBtn {
+    width: 2em;
+    height: 2em;
+  }
+  .quoteBtn {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 10px 5px;
+  }
+  .weather {
+    min-width: 25%;
+    font-size: 1em;
+  }
+  .temperature{
+    font-size: 1.9em;
+  }
+  .quote {
+    width: 95%;
+    height: 14%;
+    bottom: 0.5em;
+  }
+  .focusContent {
+    font-size: 1em;
+    width: 50%;
+  }
+  #time {
+    font-size: 4.5em;
+  }
+  #date {
+    font-size: 2.5em;
+  }
+}
